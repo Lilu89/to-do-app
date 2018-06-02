@@ -3,8 +3,60 @@
   padding: 0;
   box-sizing: border-box;
 }
-.form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formBox{
+    position: relative;
+    text-align: left;
+    width: 250px;
+    height: 270px;
+    padding: 20px;
+    background-color: rgba(171, 171, 171, 0.9);
+    border: 10px double #969696;
+}
+
+.formBox p{
+    text-align: center;
+    font-family: Arial;
+}
+
+.form label, .priority{
+    display: block;
+    margin-top: 20px;
+}
+
+.task, .date, .description, .priorities, .addBtn{
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.one{
+    background-color: lightskyblue;
+}
+.two{
+    background-color: greenyellow;
+}
+.three{
+    background-color: yellow;
+}
+.four{
+    background-color: orange;
+}
+.five{
+    background-color: red;
+}
+
+.addBtn{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
